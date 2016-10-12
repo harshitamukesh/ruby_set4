@@ -6,19 +6,25 @@
 
 class Lottery
 
-  def initialize
-  end
+  def initialize(number)
+  		lottery=Hash.new
+	lottery = {
+  	"1"=> "Gift 1",
+  	"2" => "Gift 2",
+  	"3" => "Gift 3",
+  	"4" => "Gift 4",
+  	"5"=> "Gift 5",
+  	"6" => "Gift 6",
+  	"7" => "Gift 7",
+  	"8" => "Gift 8",
+  	"9" => "Gift 9",
+  	"10" => "Gift 10",
+	}
+  		puts "#{lottery[number]}"
 
-  def method_name
-    
-  end
+  end  
 end
 
-@gifts ={
-	key, value,
-	key,value
-}
-
-number = 'Inut From the user'
+puts 'Enter a number of your choice'
+number = gets.chomp
 prize = Lottery.new(number)
-puts prize
